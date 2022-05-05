@@ -1,0 +1,6 @@
+{
+  "port": 8090,
+  "domainservice": "ws.citas.com.pe",
+  "secret": "citas-medicas-secret-key-9583@.@2022",
+  "nroreclamo": 5
+}

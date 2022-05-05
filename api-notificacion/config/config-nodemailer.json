@@ -1,0 +1,18 @@
+{
+  "mailinghost": "smtp.office365.com",
+  "mailingport": 587,
+  "users": [
+    {
+      "mailinguser": "pamolsa.servicioalcliente@carvajal.com",
+      "mailingpass": "PAM-17.49*"
+    },
+    {
+      "mailinguser": "teresponde@carvajal.com",
+      "mailingpass": "Carv2025%&#"
+    }
+  ],
+  "mail_quote": "pamolsa.servicioalcliente@carvajal.com",
+  "mail_contact": "pamolsa.servicioalcliente@carvajal.com",
+  "mail_postulation": "desarrollo.organizacional@carvajal.com",
+  "mail_book": "teresponde@carvajal.com"
+}

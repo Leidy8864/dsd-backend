@@ -1,0 +1,24 @@
+service: api-sucursal
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+plugins:
+  - serverless-offline
+
+custom:
+    serverless-offline:
+        httpPort: 3008
+        websocketPort: 3009
+        lambdaPort: 3010
+
+functions:
+  api:
+    handler: handler.handler
+    name: API-SUCURSAL-DSD
+    events:
+      - httpApi: '*'
+    environment:
+      ENTORNO: development

@@ -1,0 +1,24 @@
+service: horario
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+plugins:
+  - serverless-offline
+
+custom:
+    serverless-offline:
+        httpPort: 3026
+        websocketPort: 3027
+        lambdaPort: 3028
+
+functions:
+  api:
+    handler: handler.handler
+    name: API-HORARIO-DSD
+    events:
+      - httpApi: '*'
+    environment:
+      ENTORNO: development

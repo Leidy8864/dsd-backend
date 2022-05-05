@@ -1,0 +1,24 @@
+service: api-especialista
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+plugins:
+  - serverless-offline
+
+custom:
+    serverless-offline:
+        httpPort: 3011
+        websocketPort: 3012
+        lambdaPort: 3013
+
+functions:
+  api:
+    handler: handler.handler
+    name: API-ESPECIALISTA-DSD
+    events:
+      - httpApi: '*'
+    environment:
+      ENTORNO: development

@@ -1,0 +1,24 @@
+service: usuario
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+plugins:
+  - serverless-offline
+
+custom:
+    serverless-offline:
+        httpPort: 3014
+        websocketPort: 3015
+        lambdaPort: 3016
+
+functions:
+  api:
+    handler: handler.handler
+    name: API-USUARIO-DSD
+    events:
+      - httpApi: '*'
+    environment:
+      ENTORNO: development

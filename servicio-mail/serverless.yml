@@ -1,0 +1,20 @@
+service: servicio-mail
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  mail:
+    handler: handler.mail
+    events:
+      - httpApi:
+          path: /
+          method: post
+    environment:
+      ENTORNO: development
+      MAIL_USER: u202219987@upc.edu.pe
+      MAIL_PASS: ipkjmr1997ExoUpc@1
+      MAIL_HOST: smtp.office365.com
+      MAIL_PORT: 587

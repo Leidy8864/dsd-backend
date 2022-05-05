@@ -1,0 +1,11 @@
+{
+  "name": "api-notificacion",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemailer": "^6.7.5",
+    "nodemailer-express-handlebars": "^5.0.0",
+    "serverless-http": "^2.7.0"
+  }
+}

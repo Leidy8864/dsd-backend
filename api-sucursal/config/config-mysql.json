@@ -1,0 +1,26 @@
+{
+    "development": {
+        "username": "admin",
+        "password": "upcdsd2022",
+        "database": "citas_medicas",
+        "host": "db-dsd-proyecto-final.cghubh1s3bnb.us-east-1.rds.amazonaws.com",
+        "dialect": "mysql",
+        "logging": true
+    },
+    "test": {
+        "username": "",
+        "password": "",
+        "database": "",
+        "host": "",
+        "dialect": "mysql",
+        "logging": false
+    },
+    "production": {
+        "username": "",
+        "password": "",
+        "database": "",
+        "host": "",
+        "dialect": "mysql",
+        "logging": false
+    }
+}

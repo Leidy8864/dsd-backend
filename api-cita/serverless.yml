@@ -1,0 +1,24 @@
+service: api-cita
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+plugins:
+  - serverless-offline
+
+custom:
+    serverless-offline:
+        httpPort: 3020
+        websocketPort: 3021
+        lambdaPort: 3022
+
+functions:
+  api:
+    handler: handler.handler
+    name: API-CITA-DSD
+    events:
+      - httpApi: '*'
+    environment:
+      ENTORNO: development
